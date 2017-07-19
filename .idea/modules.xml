@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CarRepair.iml" filepath="$PROJECT_DIR$/CarRepair.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liabary/liabary.iml" filepath="$PROJECT_DIR$/liabary/liabary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/runer_net/runer_net.iml" filepath="$PROJECT_DIR$/runer_net/runer_net.iml" />
+      <module fileurl="file://$PROJECT_DIR$/um/um.iml" filepath="$PROJECT_DIR$/um/um.iml" />
     </modules>
   </component>
 </project>

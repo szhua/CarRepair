@@ -24,7 +24,20 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    compile project(':liabary')
+    compile project(':runer_net')
+    compile project(':um')
+    //添加支付库----支付宝和微信支付；
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    compile 'io.github.mayubao:pay_library:1.0.1'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.orhanobut:logger:2.1.1'
+    compile 'com.just.agentweb:agentweb:1.2.4'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.pgyersdk:sdk:2.5.6'
     testCompile 'junit:junit:4.12'
 }

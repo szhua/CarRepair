@@ -9,6 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/liabary" />
+            <option value="$PROJECT_DIR$/runer_net" />
+            <option value="$PROJECT_DIR$/um" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
