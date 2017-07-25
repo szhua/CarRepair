@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lei.repair.ui.activity.MerchantInfoActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/common180dp">
+
+             <ImageView
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/changjian"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/common180dp" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/white"
+                 android:textSize="@dimen/text_size_12sp"
+                 android:text="营业中8：00-18:00"
+                 android:layout_gravity="right|bottom"
+                 android:paddingTop="@dimen/common4dp"
+                 android:paddingLeft="@dimen/common10dp"
+                 android:paddingRight="@dimen/common10dp"
+                 android:paddingBottom="@dimen/common4dp"
+                 android:layout_marginBottom="@dimen/common_top_bottom_margin"
+                 android:layout_marginRight="@dimen/common_left_right_margin"
+                 android:background="@drawable/round_bt_black_shape"
+                 />
+         </FrameLayout>
+
+
+
+   <LinearLayout
+       android:background="@color/white"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+       <TextView
+           android:layout_marginTop="@dimen/common_top_bottom_margin"
+           android:layout_marginBottom="@dimen/common_top_bottom_margin"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="华泰汽车维修中心"
+           android:textSize="@dimen/text_size_16sp"
+           android:textColor="@color/text_color_normal"
+           android:layout_marginLeft="@dimen/common_left_right_margin"
+           />
+
+
+      <RelativeLayout
+          android:layout_marginBottom="@dimen/common_top_bottom_margin"
+          android:paddingTop="@dimen/common_top_bottom_margin"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srb_starSize="12dp"
+                app:srb_numberOfStars="5"
+                app:srb_rating="3"
+                android:layout_marginLeft="@dimen/common_left_right_margin"
+                app:srb_stepSize="0.1"
+                app:srb_borderColor="@color/text_color_red"
+                app:srb_fillColor="@color/text_color_red"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14sp"
+                android:text="4.3分"
+                android:layout_marginLeft="@dimen/common_top_bottom_margin"
+                android:textColor="@color/text_color_red"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14sp"
+                android:text="7"
+                android:layout_marginLeft="@dimen/common_top_bottom_margin"
+                android:textColor="@color/text_color_red"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14sp"
+                android:text="人购买"
+                android:textColor="@color/text_color_gray"
+                />
+        </LinearLayout>
+
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/text_size_14sp"
+              android:textColor="@color/text_color_gray"
+              android:text="7人评价"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="@dimen/common_left_right_margin"
+              />
+
+      </RelativeLayout>
+
+
+       <View style="@style/Divider" android:layout_marginLeft="@dimen/common_left_right_margin"></View>
+
+
+       <LinearLayout
+           android:weightSum="10"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/common40dp">
+
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="8"
+               android:layout_height="match_parent"
+               android:text="不知道哪个地方的质地"
+               android:gravity="center_vertical"
+               android:drawableLeft="@drawable/address"
+               android:drawablePadding="@dimen/common6dp"
+               android:paddingLeft="@dimen/common_left_right_margin"
+               />
+
+
+           <View style="@style/VerticalDivider" android:layout_marginTop="@dimen/common4dp" android:layout_marginBottom="@dimen/common4dp"></View>
+
+          <FrameLayout
+              android:layout_width="@dimen/common0dp"
+              android:layout_weight="2"
+              android:layout_height="match_parent">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/call"
+                  android:layout_gravity="center"
+                  />
+          </FrameLayout>
+
+
+
+       </LinearLayout>
+
+       <View style="@style/Divider" android:layout_marginLeft="@dimen/common_left_right_margin"></View>
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/common40dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/common40dp"
+               android:text="营业时间"
+               android:gravity="center_vertical"
+               android:layout_marginLeft="@dimen/common_left_right_margin"
+               android:textColor="@color/text_color_gray"
+               android:textSize="@dimen/text_size_14sp"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/common40dp"
+               android:text="8:00-18:00"
+               android:gravity="center_vertical"
+               android:layout_marginLeft="@dimen/common_left_right_margin"
+               android:textColor="@color/text_color_normal"
+               android:textSize="@dimen/text_size_14sp"
+               />
+       </LinearLayout>
+
+
+
+
+   </LinearLayout>
+
+
+            <View style="@style/Divider"></View>
+
+            <View style="@style/Divider" android:layout_marginTop="@dimen/common_top_bottom_margin"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/youhui"
+                    android:drawablePadding="@dimen/common4dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/common_left_right_margin"
+                    android:text="优惠活动"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common40dp"
+                    android:text="本厂最新优惠8989898989元，来吧---"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:layout_marginRight="@dimen/common_left_right_margin"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_14sp"
+                    />
+            </LinearLayout>
+
+
+            <View style="@style/Divider"></View>
+            <View style="@style/Divider" android:layout_marginTop="@dimen/common_top_bottom_margin"></View>
+            <LinearLayout
+                android:paddingLeft="@dimen/common_left_right_margin"
+                android:paddingTop="@dimen/common_top_bottom_margin"
+                android:paddingBottom="@dimen/common_top_bottom_margin"
+                android:paddingRight="@dimen/common_left_right_margin"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="厂家介绍"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_top_bottom_margin"
+                    android:layout_marginBottom="@dimen/common_top_bottom_margin"
+                    android:text="@string/merchant_des_test"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_14sp"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common150dp"
+                    android:src="@drawable/changjian"
+                    android:scaleType="centerCrop"
+                    />
+
+
+
+            </LinearLayout>
+
+            <View style="@style/Divider"></View>
+
+            <View style="@style/Divider" android:layout_marginTop="@dimen/common_top_bottom_margin"></View>
+
+
+            <LinearLayout
+                android:paddingLeft="@dimen/common_left_right_margin"
+                android:paddingTop="@dimen/common_top_bottom_margin"
+                android:paddingBottom="@dimen/common_top_bottom_margin"
+                android:paddingRight="@dimen/common_left_right_margin"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="服务承诺"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_top_bottom_margin"
+                    android:layout_marginBottom="@dimen/common_top_bottom_margin"
+                    android:text="@string/merchant_des_test"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_14sp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <View style="@style/Divider"></View>
+
+            <View style="@style/Divider" android:layout_marginTop="@dimen/common_top_bottom_margin"></View>
+
+
+
+            <LinearLayout
+                android:paddingTop="@dimen/common_top_bottom_margin"
+                android:paddingBottom="@dimen/common_top_bottom_margin"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="用户评价"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_16sp" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/evaluation_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>

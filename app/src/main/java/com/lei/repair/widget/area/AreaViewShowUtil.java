@@ -81,7 +81,9 @@ public class AreaViewShowUtil   {
                 String tx = options1Items.get(options1).getPickerViewText()+
                         options2Items.get(options1).get(options2)+
                         options3Items.get(options1).get(options2).get(options3);
-                Logger.d(tx);
+                if(onAreaSelectListener!=null){
+                    onAreaSelectListener.onAreaSelect(tx);
+                }
             }
         })
                 .setSubmitColor(ContextCompat.getColor(context, R.color.theme_color))//确定按钮文字颜色
@@ -162,4 +164,17 @@ public class AreaViewShowUtil   {
         }
         return (ArrayList<JsonBean>) detail;
     }
+
+
+    public void setOnAreaSelectListener(OnAreaSelectListener onAreaSelectListener) {
+        this.onAreaSelectListener = onAreaSelectListener;
+    }
+
+    private OnAreaSelectListener onAreaSelectListener ;
+
+    public interface OnAreaSelectListener{
+        void onAreaSelect(String area);
+    }
+
+
 }

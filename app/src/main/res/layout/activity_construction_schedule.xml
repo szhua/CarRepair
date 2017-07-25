@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lei.repair.ui.activity.ConstructionScheduleActivity">
+
+
+    <include
+        layout="@layout/header_layout"
+        ></include>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="汽车入场"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_normal"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/enter_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_left_right_margin"
+                    />
+
+            </RelativeLayout>
+
+            <View style="@style/Divider"></View>
+
+
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:layout_marginTop="@dimen/common_top_bottom_margin"
+                    android:layout_marginBottom="@dimen/common_top_bottom_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传施工照片"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_normal"
+                    />
+
+                <com.lei.repair.widget.SelectPhotoView
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:layout_marginRight="@dimen/common_left_right_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></com.lei.repair.widget.SelectPhotoView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/common80dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentRight="true"
+                        style="@style/normal_bt_style"
+                        android:layout_marginRight="@dimen/common_left_right_margin"
+                        android:text="提交"
+                        android:layout_marginBottom="@dimen/common_top_bottom_margin"
+                        />
+
+                </RelativeLayout>
+
+                <View style="@style/Divider"></View>
+
+
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common46dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="施工完毕,通知用户提车"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:textColor="@color/text_color_normal"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_left_right_margin"
+                        />
+
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/get_car_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/common_left_right_margin"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/common80dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentRight="true"
+                        style="@style/normal_bt_style"
+                        android:layout_marginRight="@dimen/common_left_right_margin"
+                        android:text="提交"
+                        android:layout_marginBottom="@dimen/common_top_bottom_margin"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common46dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="已提车"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:textColor="@color/text_color_normal"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_left_right_margin"
+                        />
+
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/finish_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/common_left_right_margin"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/common80dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentRight="true"
+                        style="@style/normal_bt_style"
+                        android:layout_marginRight="@dimen/common_left_right_margin"
+                        android:text="提交"
+                        android:layout_marginBottom="@dimen/common_top_bottom_margin"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

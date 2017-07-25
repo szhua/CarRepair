@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:weightSum="5"
+    android:gravity="center_vertical"
+    android:layout_height="46dp">
+
+
+    <EditText
+        android:layout_marginLeft="@dimen/common10dp"
+        android:layout_marginRight="@dimen/common10dp"
+        android:background="@drawable/edit_shape"
+        android:layout_marginTop="@dimen/common6dp"
+        android:layout_marginBottom="@dimen/common6dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/common6dp"
+        android:layout_marginLeft="@dimen/common10dp"
+        android:layout_marginRight="@dimen/common10dp"
+        android:layout_marginTop="@dimen/common6dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_shape" />
+
+    <EditText
+        android:layout_marginLeft="@dimen/common10dp"
+        android:layout_marginRight="@dimen/common10dp"
+        android:background="@drawable/edit_shape"
+        android:layout_marginTop="@dimen/common6dp"
+        android:layout_marginBottom="@dimen/common6dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+
+
+    <EditText
+        android:layout_marginLeft="@dimen/common10dp"
+        android:layout_marginRight="@dimen/common10dp"
+        android:background="@drawable/edit_shape"
+        android:layout_marginTop="@dimen/common6dp"
+        android:layout_marginBottom="@dimen/common6dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/common6dp"
+        android:layout_marginBottom="@dimen/common6dp"
+        android:text="原厂"
+        android:drawableRight="@drawable/rigjt_arrow"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_14sp"
+        android:textColor="@color/text_color_gray"
+        android:padding="@dimen/common6dp"
+        android:background="@drawable/tag_bg_shape_un"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        />
+
+</LinearLayout>

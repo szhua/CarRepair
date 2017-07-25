@@ -6,6 +6,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.text.TextUtils;
 
+import com.lei.repair.bean.TagBean;
 import com.lei.repair.bean.UserInfo;
 import com.lei.repair.ui.activity.LoginActivity;
 import com.runer.liabary.util.Prefs;
@@ -21,6 +22,17 @@ import java.util.List;
  */
 
 public class AppUtil {
+
+
+    public  static  List<TagBean> getTagTestDatas(int size){
+        List<TagBean> datas =new ArrayList<>() ;
+        for (int i = 0; i <size ; i++) {
+            TagBean tagbean =new TagBean() ;
+            tagbean.setTagName("item"+i);
+            datas.add(tagbean) ;
+        }
+        return  datas ;
+    }
 
 
 
@@ -107,6 +119,18 @@ public class AppUtil {
             }
         return  data ;
     }
+    public static List<String> getTestData(int size){
+        ArrayList<String> data =new ArrayList();
+        for (int i = 0; i <size; i++) {
+            if(i==1) {
+                data.add("itemUnit" + i);
+            }else{
+                data.add("item"+i);
+            }
+        }
+        return  data ;
+    }
+
 
 
     public static String timeParse(long duration) {

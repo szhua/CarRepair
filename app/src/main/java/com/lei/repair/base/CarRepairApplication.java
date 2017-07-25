@@ -14,7 +14,7 @@ import cn.jpush.android.api.JPushInterface;
  * Created by szhua on 2017/7/5/005.
  * github:https://github.com/szhua
  */
-public class ToumaiApplication extends Application {
+public class CarRepairApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();

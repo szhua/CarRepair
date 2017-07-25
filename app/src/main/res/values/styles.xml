@@ -92,4 +92,30 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="normal_bt_style_line">
+        <item name="android:textColor">@color/text_color_normal</item>
+        <item name="android:background">@drawable/nor_bt_shape_line</item>
+        <item name="android:layout_marginLeft">@dimen/common_left_right_margin</item>
+        <item name="android:layout_marginRight">@dimen/common_left_right_margin</item>
+        <item name="android:layout_height">@dimen/common_bt_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="round_bt_style">
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/round_bt_shape</item>
+        <item name="android:paddingRight">@dimen/common16dp</item>
+        <item name="android:paddingLeft">@dimen/common16dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/common6dp</item>
+        <item name="android:paddingBottom">@dimen/common6dp</item>
+
+    </style>
+
 </resources>

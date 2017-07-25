@@ -14,6 +14,8 @@ import com.lei.repair.bean.TagBean;
 import com.runer.liabary.flowlayout.FlowLayout;
 import com.runer.liabary.flowlayout.TagAdapter;
 import com.runer.liabary.flowlayout.TagFlowLayout;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -24,37 +26,27 @@ import java.util.Set;
  * TagsView
  */
 
-public class TagsView extends LinearLayout{
+public class MultiSelectTagsView extends LinearLayout{
 
     private List<TagBean> tagBeanList ;
     private TagFlowLayout tagFlowLayout ;
     private TagsAdapter  tagsAdapter;
 
-    public TagsView(Context context) {
+    public MultiSelectTagsView(Context context) {
         this(context,null,0);
     }
-    public TagsView(Context context, @Nullable AttributeSet attrs) {
+    public MultiSelectTagsView(Context context, @Nullable AttributeSet attrs) {
         this(context,attrs,0);
     }
 
     private int currentPose ;
-    public TagsView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public MultiSelectTagsView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         LayoutInflater.from(context).inflate(R.layout.tags_layout,this);
         tagFlowLayout = (TagFlowLayout) findViewById(R.id.tag_flow_layout);
         tagFlowLayout.setMaxSelectCount(1);
 
-        tagFlowLayout.setOnSelectListener(new TagFlowLayout.OnSelectListener() {
-            @Override
-            public void onSelected(Set<Integer> selectPosSet) {
-                //前面的设置为未选中
-                tagsAdapter.getItem(currentPose).setSelected(false);
-                //当前的设置为选中
-                tagsAdapter.getItem((int) selectPosSet.toArray()[0]).setSelected(true);
-                tagsAdapter.notifyDataChanged();
-                currentPose = (int) selectPosSet.toArray()[0];
-            }
-        });
+
     }
 
     public void setTagBeanList(List<TagBean> tagBeanList) {
@@ -70,24 +62,42 @@ public class TagsView extends LinearLayout{
             super(datas);
         }
         @Override
-        public View getView(FlowLayout parent, int position, TagBean tagBean) {
+        public View getView(FlowLayout parent, int position, final TagBean tagBean) {
             View view =View.inflate(getContext(),R.layout.item_tags_layout,null);
             View delete =view.findViewById(R.id.delete) ;
             TextView tagName = (TextView) view.findViewById(R.id.tagname);
             tagName.setText(tagBean.getTagName());
+            delete.setVisibility(View.GONE);
             if(tagBean.isSelected()){
-                delete.setVisibility(View.GONE);
                 view.setSelected(true);
                 view.setBackgroundResource(R.drawable.tag_bg_shape);
                 tagName.setTextColor(ContextCompat.getColor(getContext(),R.color.white));
             }else{
-                delete.setVisibility(View.GONE);
                 view.setSelected(false);
                 view.setBackgroundResource(R.drawable.tag_bg_shape_un);
                 tagName.setTextColor(ContextCompat.getColor(getContext(),R.color.text_color_gray));
             }
+            tagName.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                      tagBean.setSelected(!tagBean.isSelected());
+                      notifyDataChanged();
+                }
+            });
             return view;
         }
+    }
+
+    public  List<TagBean> getDatas(){
+        List<TagBean >datas =new ArrayList<>() ;
+        if(tagBeanList!=null){
+            for (TagBean tagBean : tagBeanList) {
+                if(tagBean.isSelected()){
+                    datas.add(tagBean) ;
+                }
+            }
+        }
+        return  datas ;
     }
 
 

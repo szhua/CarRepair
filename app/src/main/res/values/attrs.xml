@@ -18,6 +18,15 @@
         <attr name="editable" format="boolean"></attr>
     </declare-styleable>
 
+    <declare-styleable name="RightArrowView">
+        <attr name="title" format="string"></attr>
+        <attr name="left_img" format="reference"></attr>
+        <attr name="show_left_img" format="string"></attr>
+        <attr name="subtitle" format="string"></attr>
+        <attr name="title_color" format="color"></attr>
+        <attr name="sub_title_color" format="color"></attr>
+    </declare-styleable>
+
     <declare-styleable name="StateTextView">
 
         <attr name="left_selected_icon" format="reference"></attr>

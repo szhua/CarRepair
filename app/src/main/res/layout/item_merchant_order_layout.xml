@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/white_press_bg"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View style="@style/Divider"></View>
+  <RelativeLayout
+      android:paddingLeft="@dimen/common_left_right_margin"
+      android:paddingRight="@dimen/common_left_right_margin"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/common40dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="业务详情"
+          android:gravity="center_vertical"
+          android:textSize="@dimen/text_size_14sp"
+          android:textColor="@color/text_color_theme"
+          />
+      <TextView
+          android:id="@+id/order_num"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="90909090909090"
+          android:layout_alignParentRight="true"
+          android:gravity="center_vertical"
+          android:textSize="@dimen/text_size_14sp"
+          android:textColor="@color/text_color_theme"
+          />
+  </RelativeLayout>
+
+    <View style="@style/Divider" android:layout_marginLeft="@dimen/common_left_right_margin"></View>
+    <RelativeLayout
+        android:paddingLeft="@dimen/common_left_right_margin"
+        android:paddingRight="@dimen/common_left_right_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="所在城市"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/text_color_gray"
+            />
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="新疆乌鲁木齐"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/text_color_normal"
+            />
+    </RelativeLayout>
+    <View style="@style/Divider" android:layout_marginLeft="@dimen/common_left_right_margin"></View>
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/common_left_right_margin"
+        android:paddingRight="@dimen/common_left_right_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="维修需求"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/text_color_gray"
+            />
+        <TextView
+            android:id="@+id/weixiu_xuqiu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="前天不慎把车撞在你身上"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/common4dp"
+            android:drawableRight="@drawable/rigjt_arrow"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/text_color_normal"
+            />
+    </RelativeLayout>
+    <View style="@style/Divider" android:layout_marginLeft="@dimen/common_left_right_margin"></View>
+
+
+   <LinearLayout
+       android:id="@+id/baojia_container"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <RelativeLayout
+           android:paddingLeft="@dimen/common_left_right_margin"
+           android:paddingRight="@dimen/common_left_right_margin"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/common40dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="我的报价"
+               android:gravity="center_vertical"
+               android:textSize="@dimen/text_size_14sp"
+               android:textColor="@color/text_color_gray"
+               />
+           <TextView
+               android:id="@+id/baojia_price"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="9899元"
+               android:layout_alignParentRight="true"
+               android:gravity="center_vertical"
+               android:drawablePadding="@dimen/common4dp"
+               android:drawableRight="@drawable/rigjt_arrow"
+               android:textSize="@dimen/text_size_14sp"
+               android:textColor="@color/text_color_red"
+               />
+       </RelativeLayout>
+       <View style="@style/Divider" android:layout_marginLeft="@dimen/common_left_right_margin"></View>
+   </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/common_top_bottom_margin"
+        android:layout_marginBottom="@dimen/common_top_bottom_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="用户已付款"
+            android:layout_marginLeft="@dimen/common_left_right_margin"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/text_color_theme"
+            />
+
+        <TextView
+            android:id="@+id/order_bt"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/common_left_right_margin"
+            style="@style/round_bt_style"
+            android:text="抢单"
+             />
+
+    </FrameLayout>
+
+
+</LinearLayout>

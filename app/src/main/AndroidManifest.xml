@@ -3,6 +3,7 @@
     package="com.lei.repair">
 
     <application
+        android:name=".base.CarRepairApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,9 +17,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.fragment" />
         <activity android:name=".ui.activity.MerchantCenterActivity" />
-        <activity android:name=".ui.activity.LoginActivity"></activity>
+        <activity android:name=".ui.activity.LoginActivity" />
+        <activity android:name=".ui.activity.MerchantOrdersActivity" />
+        <activity android:name=".ui.activity.MerchantInfoActivity" />
+        <activity android:name=".ui.activity.MechantPersonalInfoEditActivity" />
+
+        <!-- 图片选择 -->
+        <activity
+            android:name="com.yanzhenjie.album.AlbumActivity"
+            android:screenOrientation="portrait" />
+        <!-- 图片裁剪 -->
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.MerchantQuotation" />
+        <activity android:name=".ui.activity.MerchantCheckMaintenanceDemand" />
+        <activity android:name=".ui.activity.AddChargeActivity" />
+        <activity android:name=".ui.activity.MechantQuotationConfirmationActivity" />
+        <activity android:name=".ui.activity.ConstructionScheduleActivity"></activity>
     </application>
 
 </manifest>

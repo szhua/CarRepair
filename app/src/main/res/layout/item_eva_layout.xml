@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_press_bg"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/common_left_right_margin"
+        android:layout_marginTop="@dimen/common_top_bottom_margin"
+        android:layout_marginBottom="@dimen/common_top_bottom_margin"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/header_icon"
+            android:layout_width="@dimen/common50dp"
+            android:layout_height="@dimen/common50dp"
+            android:src="@drawable/header"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你猜我是谁"
+
+            android:textColor="@color/text_color_red"
+            android:textSize="@dimen/text_size_12sp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/common_top_bottom_margin"
+        android:layout_marginLeft="@dimen/common6dp"
+        android:layout_marginRight="@dimen/common_left_right_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+<RelativeLayout
+    android:layout_marginTop="@dimen/common4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.iarcuschin.simpleratingbar.SimpleRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srb_starSize="10dp"
+        app:srb_numberOfStars="5"
+        app:srb_rating="3"
+        app:srb_stepSize="0.1"
+        app:srb_borderColor="@color/text_color_red"
+        app:srb_fillColor="@color/text_color_red"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_size_12sp"
+        android:text="2016.05.03 15:09:09"
+        android:textColor="@color/text_color_light"
+        />
+
+
+</RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size_12sp"
+            android:text=" 如何评价大冰? 大冰,某卫视主持人,民谣歌手,背包客,酒吧老板,出版《他们最幸福》《乖,摸摸头》显示全部 关注者 "
+            android:textColor="@color/text_color_light"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

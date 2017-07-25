@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.lei.repair.ui.activity.MechantPersonalInfoEditActivity">
+
+    <include
+        layout="@layout/header_layout"
+        ></include>
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+       <com.lei.repair.widget.NormalInputEditText
+           app:left_text="厂家名称"
+           app:right_hint="请填写厂家名称"
+           app:input_type="text"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"></com.lei.repair.widget.NormalInputEditText>
+
+
+            <com.lei.repair.widget.NormalInputEditText
+                app:left_text="联系人"
+                app:right_hint="请填写联系人"
+                app:input_type="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.lei.repair.widget.NormalInputEditText>
+
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="地区"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_normal"
+                    />
+
+                <TextView
+                    android:id="@+id/select_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="乌鲁木齐"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="@dimen/common_left_right_margin"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:drawablePadding="@dimen/common6dp"
+                    android:drawableRight="@drawable/rigjt_arrow"
+                    android:textColor="@color/text_color_gray"
+                    />
+            </RelativeLayout>
+
+<View style="@style/Divider"></View>
+
+            <View style="@style/Divider" android:layout_marginTop="@dimen/common_top_bottom_margin"></View>
+
+
+            <com.lei.repair.widget.NormalInputEditText
+                app:left_text="详细地址"
+                app:right_hint="请填写地址"
+                app:input_type="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.lei.repair.widget.NormalInputEditText>
+            <com.lei.repair.widget.NormalInputEditText
+                app:left_text="客服电话"
+                app:right_hint="请填写客服电话"
+                app:input_type="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.lei.repair.widget.NormalInputEditText>
+
+            <com.lei.repair.widget.NormalInputEditText
+                app:left_text="营业时间"
+                app:right_hint="请填写营业时间"
+                app:input_type="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.lei.repair.widget.NormalInputEditText>
+
+            <com.lei.repair.widget.NormalInputEditText
+                app:left_text="联系人"
+                app:right_hint="请填写联系人"
+                app:input_type="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.lei.repair.widget.NormalInputEditText>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/id1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common46dp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:gravity="center_vertical"
+                    android:text="服务类型"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <com.lei.repair.widget.TagsView
+                    android:layout_marginTop="@dimen/common_top_bottom_margin"
+                    android:layout_toRightOf="@id/id1"
+                    android:id="@+id/service_types"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.lei.repair.widget.TagsView>
+
+            </RelativeLayout>
+
+            <View style="@style/Divider"></View>
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="商家类型"
+                    android:id="@+id/id"
+                    android:textColor="@color/text_color_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common46dp"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    />
+
+                <com.lei.repair.widget.TagsView
+                    android:layout_marginTop="@dimen/common_top_bottom_margin"
+                    android:layout_toRightOf="@id/id"
+                    android:id="@+id/mechant_types"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.lei.repair.widget.TagsView>
+
+            </RelativeLayout>
+
+            <View style="@style/Divider"></View>
+
+
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="请上传环境照片"
+                    android:textColor="@color/text_color_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common46dp"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    />
+
+
+                <com.lei.repair.widget.SelectPhotoView
+                    android:layout_marginBottom="@dimen/common_left_right_margin"
+                    android:id="@+id/selet_photos_view"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.lei.repair.widget.SelectPhotoView>
+
+                <TextView
+                    android:text="企业介绍"
+                    android:textColor="@color/text_color_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common46dp"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    />
+
+                <EditText
+                    android:textColorHint="@color/text_color_light"
+                    android:hint="请填入企业介绍"
+                    android:gravity="left|top"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:background="@drawable/edit_shape"
+                    android:padding="@dimen/common6dp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:layout_marginRight="@dimen/common_left_right_margin"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/common_top_bottom_margin"
+                    android:layout_height="@dimen/common80dp" />
+
+                <TextView
+                    android:text="服务承诺"
+                    android:textColor="@color/text_color_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common46dp"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    />
+
+                <EditText
+                    android:textColorHint="@color/text_color_light"
+                    android:hint="请填入服务承诺"
+                    android:gravity="left|top"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:background="@drawable/edit_shape"
+                    android:padding="@dimen/common6dp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:layout_marginRight="@dimen/common_left_right_margin"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/common30dp"
+                    android:layout_height="@dimen/common80dp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView style="@style/normal_bt_style" android:text="提交" android:layout_marginBottom="@dimen/common_left_right_margin"></TextView>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

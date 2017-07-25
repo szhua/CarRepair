@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lei.repair.ui.activity.MerchantCheckMaintenanceDemand">
+
+
+    <include
+        layout="@layout/header_layout"
+        ></include>
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp"
+                android:text="客户基础信息"
+                android:textColor="@color/text_color_theme"
+                android:textSize="@dimen/text_size_16sp"
+                android:gravity="center"
+                />
+            <View style="@style/Divider"></View>
+            <com.lei.repair.widget.NormalInputEditText
+                app:input_type="text"
+                app:left_text="订单编号"
+                app:right_hint_color="@color/text_color_theme"
+                app:right_hint="898989898989"
+                app:editable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.lei.repair.widget.NormalInputEditText>
+
+
+            <com.lei.repair.widget.NormalInputEditText
+                app:input_type="text"
+                app:left_text="所在地区"
+                app:editable="false"
+                app:right_hint_color="@color/text_color_theme"
+                app:right_hint="乌鲁木齐"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.lei.repair.widget.NormalInputEditText>
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp">
+
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:text="我的需求"
+                    android:textColor="@color/text_color_normal"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+<LinearLayout
+    android:layout_alignParentRight="true"
+    android:layout_width="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout2">
+
+
+    <TextView
+        android:layout_marginRight="@dimen/common_left_right_margin"
+        android:text="保养"
+        android:textSize="@dimen/text_size_14sp"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/common10dp"
+        android:paddingRight="@dimen/common10dp"
+        android:paddingTop="@dimen/common4dp"
+        android:paddingBottom="@dimen/common4dp"
+        android:background="@drawable/tag_bg_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginRight="@dimen/common_left_right_margin"
+        android:text="维修"
+        android:textSize="@dimen/text_size_14sp"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/common10dp"
+        android:paddingRight="@dimen/common10dp"
+        android:paddingTop="@dimen/common4dp"
+        android:paddingBottom="@dimen/common4dp"
+        android:background="@drawable/tag_bg_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/Divider"></View>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/common_left_right_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="需求描述"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:textColor="@color/text_color_normal"
+                    android:layout_height="@dimen/common46dp" />
+
+
+
+                <TextView
+                    android:text="附近开房山东对接看风景上岛咖啡今生的看风景上岛咖啡接口方式的艰苦奋斗肯定就是看风景附近上岛咖啡进口商的风刀霜剑焚枯食淡"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:layout_marginRight="@dimen/common_left_right_margin"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/text_color_gray"
+                    android:layout_height="match_parent" />
+
+
+
+            </LinearLayout>
+
+<View style="@style/Divider"></View>
+
+            <com.lei.repair.widget.NormalInputEditText
+                app:input_type="text"
+                app:left_text="预约时间"
+                app:editable="false"
+                app:right_hint_color="@color/text_color_theme"
+                app:right_hint="2017/09/08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.lei.repair.widget.NormalInputEditText>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="行驶证正副本照片"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:textColor="@color/text_color_normal"
+                    android:layout_height="@dimen/common46dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginLeft="@dimen/common6dp"
+                    android:id="@+id/driving_license_photos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <View style="@style/Divider"></View>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="车辆整体照"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:textColor="@color/text_color_normal"
+                    android:layout_height="@dimen/common46dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginLeft="@dimen/common6dp"
+                    android:id="@+id/car_photos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <View style="@style/Divider"></View>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="损失细节照片"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:textColor="@color/text_color_normal"
+                    android:layout_height="@dimen/common46dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginLeft="@dimen/common6dp"
+                    android:id="@+id/loss_detail_photos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+<View style="@style/Divider"></View>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="定损单照片"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:textColor="@color/text_color_normal"
+                    android:layout_height="@dimen/common46dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginLeft="@dimen/common6dp"
+                    android:id="@+id/losssingle_photos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+            <View style="@style/Divider"></View>
+
+            <View style="@style/Divider" android:layout_marginTop="@dimen/common_top_bottom_margin"></View>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common46dp"
+                    android:text="业务处理"
+                    android:textColor="@color/text_color_theme"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:gravity="center"
+                    />
+                <View style="@style/Divider"></View>
+
+                <com.lei.repair.widget.RightArrowView
+                    android:id="@+id/tijiao_baojia_bt"
+                    app:title="提交我的报价"
+                    app:show_left_img="false"
+                    app:title_color="@color/text_color_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></com.lei.repair.widget.RightArrowView>
+
+
+
+                <TextView
+                    style="@style/normal_bt_style"
+                    android:text="评价"
+                    android:layout_marginTop="@dimen/common20dp"
+                    android:layout_marginBottom="@dimen/common20dp"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
